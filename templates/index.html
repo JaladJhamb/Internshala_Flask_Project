@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Web</title>
+        <meta name="description" content="">
+
+        <!-- The compiled CSS file -->
+        <link rel="stylesheet" href="../static/production.css">
+
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+
+        <!-- favicon.ico. Place these in the root directory. -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+
+    <body class="has-animations">
+        <a href="/filter/" class="btn btn-lg p-2 text-capitalize text-dark">
+            <h4>Database</h4></a>
+
+    <!-- Header -->
+    <header class="pt2 pb1 align--center">
+        <div class="container">
+            <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-size: 50px;color:cadetblue;">Internshala</p>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <main>
+        
+        <div class="container">
+
+            <!-- Info -->
+            <section class="grid-row grid-row--center">
+                <!-- Cabin -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="../static/Skills_perks.jpg" alt="Cabin">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
+                    <h3 style="color: cadetblue;">Skills & Perks</h3>
+                    <p>Over here there is a wordcloud shown showing top skills and perks. The words which are large and are more in count are more demanding as compared to others.</p>
+                </div>
+                <!-- Teepees -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-4">
+                    <h3 style="color: cadetblue;">Top Profiles</h3>
+                    <p>Over here a barplot shown related to the top 10 profiles which were most common among internshsips.Business development,Graphic Design,Digital Marketing,Content writing are the ones which top the list of top 10 profiles.</p>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-3 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="../static/Top_profiles.jpg" alt="Teepee">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <!-- Fishing -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-5 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="../static/loc_sti_dur1.jpg" alt="Fishing">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-6">
+                    <h3 style="color: cadetblue;">Top Location, Stipend and Duration</h3>
+                    <p>Over here there are three different graphs shown, one is top location where most of the internships are offered, second is top 7 highest stipend offered to the students during internships and thirs is the Duration of the internshisps.</p>
+                </div>
+                <!-- Archery -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-8">
+                    <h3 style="color: cadetblue;">Top Perks and Skills</h3>
+                    <p>Over here top perks and skills are shown differently for the better visulization. We can see certificate, letter of recommendation and flexible work hours were the top perks while ms-office,adobe-photoshop, digital marketing were the top skills among internships.</p>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-7 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="../static/perks_skills1.jpg" alt="Archery">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <!-- Canoeing -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-9 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="../static/Internships_vs_internjoboffer.png" alt="Canoeing">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-10">
+                    <h3 style="color: cadetblue;">Companies Providing Internships with Job Offer</h3>
+                    <p>Here we can see that there were around 1000 companies which provided job offer after the internships while the count of the companies were higher which provide just internships.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Pricing -->
+        <section class="align--center pt2 pb3">
+            <p class="h2" style="color: cadetblue;">Summary</p>
+            <p>In this page we have seen the top perks, skills required for the internships, the top locations, the  top stipend offered and the top durations  of the internships. There were top profiles shown which were mostly demanding for the internships,and the graph related tho the companies providing job offer after the internhsips.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="bg--secondary-color pt3 pb3">
+            <div class="container">
+                <div class="mb2 align--center">
+                    <h3 class="mb1" style="color: cadetblue;">Contact us if you have any query</h3>
+                    <p>We'll try to reply as soon as possible</p>
+                </div>
+                <form method="POST" action="/aftercontact/">
+                    <div class="grid-row">
+                        <div class="grid-column span-half mt1">
+                            <label class="label" for="name">Name</label>
+                            <input class="form-control" id="name" name="name">
+                        </div>
+                        <div class="grid-column span-half mt1">
+                            <label class="label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email">
+                        </div>
+                    </div>
+                    
+                    <label class="label mt1" for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message"></textarea>
+                    <div class="align--right mt1">
+                        <button class="btn btn--outline">Send</button>
+                    </div>
+                    {% if msg %}
+                       {{msg}}
+                    {% endif %}
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt2 pb2">
+        <div class="container align--center">
+            <ul class="no-bullets list--inline mt1">
+                <li class="mr1"><a href="https://www.facebook.com" class="link"><img class="icon" src="../static/facebook.svg" alt="Facebook"></a></li>
+                <li class="mr1"><a href="https://www.twitter.com" class="link"><img class="icon" src="../static/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com" class="link"><img class="icon" src="../static/instagram.svg" alt="Instagram"></a></li>
+            </ul>
+            <p>&copy; Internshala</p>
+        </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- The compiled JavaScript file -->
+    <script src="../static/production.js"></script>
+
+    </body>
+</html>
+
